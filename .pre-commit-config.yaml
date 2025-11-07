@@ -22,3 +22,9 @@ repos:
 ci:
   autofix_commit_msg: 🎨 [pre-commit.ci] Auto format from pre-commit.com hooks
   autoupdate_commit_msg: ⬆ [pre-commit.ci] pre-commit autoupdate
+  https: https://github.com/charliermarsh/ruff-pre-commit
+  rev: v0.2.2
+  hooks:
+    - id: ruff
+      args: [--fix]
+    - id: ruff-format
